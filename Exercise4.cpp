@@ -1,0 +1,26 @@
+#include <iostream>
+
+int main() {
+  float length;
+  float width;
+  //defining the variables
+
+  std::cout << "What is the length of the room in feet?\n";
+  //output:asking the users for parameters
+  std::cin >> length;
+  //input:assigned to a predefined variable
+  std::cout << "What is the width of the room in feet?\n";
+  //output:asking the user for parameters
+  std::cin >> width;
+  //input:assigned to a predefined variable
+
+  const float sqFoot = (length*width);
+  //square foot calculation
+  const float sqMeter = (sqFoot/10.764);
+  //square measure calculation
+
+  std::cout<<"Your room's dimension is "<<length<<" by "<<width<<" feet, the area is:\n"<<sqFoot<<" square foot\n"<<sqMeter<<" square meters";
+  //final output text including printing calculations
+
+  return 0;
+}
