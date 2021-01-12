@@ -1,0 +1,24 @@
+#include <iostream>
+
+int main() {
+  std::string quote;
+  std::string author;
+  //defining variables
+
+  std::cout << "What is the quote?\n";
+  //output:asks the user for a quote
+  getline(std::cin,quote);
+  //input:users input is assigned to predefined varibale (quote)
+  //getline used for multiple words
+
+  std::cout << "who said it?\n";
+  //output:asks user for author
+  getline(std::cin,author);
+  //input:users input is assigned to predefined varibale (author)
+  //getline used for multiple words
+
+  std::cout << author << " says: \"" << quote << "\"\n";
+  //final output message displaying inputs together
+
+return 0; //to finish the function
+}
